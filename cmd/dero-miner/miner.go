@@ -283,6 +283,7 @@ func main() {
 				}
 
 				l.SetPrompt(fmt.Sprintf("\033[1m\033[32mDERO Miner: \033[0m"+color+"Height %d "+pcolor+" BLOCKS %d MiniBlocks %d \033[32mNW %s %s>%s>>\033[0m ", our_height, block_counter, mini_block_counter, hash_rate_string, mining_string, testnet_string))
+			        logger.V(0).Info("height", our_height, "blocks", block_counter, "mini_blocks", mini_block_counter, "hash_rate", hash_rate_string, "worker_hashrate", mining_string)
 				l.Refresh()
 				last_our_height = our_height
 				last_best_height = best_height
