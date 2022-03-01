@@ -1,3 +1,3 @@
-module github.com/deroproject/derohe
+module github.com/freqnik/derohe
 
 go 1.17
